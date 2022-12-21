@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/lin_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+
+            android:id="@+id/bt_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始定位" />
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:id="@+id/bt_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示" />
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:id="@+id/bt_query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+
+                android:layout_marginLeft="15dp"
+                android:id="@+id/et_name"
+                android:minWidth="120dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="位置名称" />
+            <Button
+                android:layout_marginLeft="5dp"
+                android:id="@+id/bt_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <com.baidu.mapapi.map.MapView
+        android:layout_below="@+id/lin_title"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.baidu.mapapi.map.MapView>
+
+
+    <ScrollView
+        android:background="#00000000"
+        android:layout_below="@+id/lin_title"
+        android:id="@+id/lin_text"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:text="测试结果"
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+    </ScrollView>
+
+
+</RelativeLayout>

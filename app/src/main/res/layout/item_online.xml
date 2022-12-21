@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    app:layout_shadowColor="#0d000000"-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/lin"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+            <TextView
+                android:text="内容"
+                android:id="@+id/姓名"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/default_textColor"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="具体内容"
+                android:id="@+id/时间"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:textColor="#808080"
+
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/位置"
+
+                android:text="ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_toRightOf="@+id/位置"
+                android:layout_centerVertical="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+
+                android:src="@mipmap/enter" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@color/color_divide" />-->
+
+
+
+
+    <View
+
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/default_divide"></View>
+</LinearLayout>
+
